@@ -1,0 +1,15 @@
+version: "3.3"
+services: 
+  mysql:
+    image: centurylink/mysql
+    container_name: mysql-5.7
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: treino
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 1234 
+    volumes:
+      - "C:/Users/Eduardo/Documents/Volume/mysql/:/var/lib/mysql"

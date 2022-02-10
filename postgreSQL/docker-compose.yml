@@ -1,0 +1,13 @@
+version: "3"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "1234"
+    volumes:
+      - "C:/Users/Eduardo/Documents/Volume/postgresql/:/var/lib/postgresql/"
+

@@ -1,0 +1,11 @@
+version: "3"
+services: 
+  oracle:
+    image: wnameless/oracle-xe-11g:16.04 #https://hub.docker.com/r/wnameless/oracle-xe-11g/
+    container_name: oracle-xe-11g
+    ports:
+      - 1521:1521
+      - 8080:8080
+      - 5500:5500
+    volumes:
+      - "C:/Users/Eduardo/Documents/Volume/oracle/:/u01/app/oracle/oradata/oracle11g-data/"
